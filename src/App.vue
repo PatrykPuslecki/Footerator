@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="leftSide">
+      <img src="./assets/logo.png" />
+      <h1>Footerator v1.1</h1>
+      <h2>Wygeneruj stopki na podstawie pliku CSV!</h2>
+      <h3>Instrukcja:</h3>
+      <ol>
+        <li>
+          Przechodzimy pod adres
+          <a class="exampleFile" href="" target="_blank">
+            Plik wzorcowy
+          </a>
+        </li>
+        <li>Uzupełniamy dane</li>
+        <li>
+          Po uzupełnieniu pliku wzorcowego w arkuszu google klikamy PLIK ->
+          Pobierz -> wartość rozdzielana przecinkami (.csv, bieżący arkusz)
+        </li>
+        <li>
+          Wracamy do arkusza google i czyścimy wszystkie dane (oprócz pierwszego
+          wiersza który zawiera tytuł kolumn) - kwestie bezpieczeństwa danych
+        </li>
+        <li>
+          Następnie przechodzimy do prawej strony aplikacji, wybieramy plik,
+          sprawdzamy czy dane poprawnie się wczytały a następnie pobieramy
+          paczkę ZIP zawierającą wygenerowane stopki
+        </li>
+      </ol>
+    </div>
+    <div class="rightSide">
+      <InputForm />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import InputForm from "./components/InputForm.vue";
+import "./scss/global.scss";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    InputForm
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
