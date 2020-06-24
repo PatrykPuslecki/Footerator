@@ -132,7 +132,7 @@ export default {
             singleFooter = {};
           if (element["CertyfikatGA"] === "Tak") {
             displayGA =
-              '<img src="" class="gads" alt="" style="float: right; width: 35px;">';
+              '<img src="https://github.com/PatrykPuslecki/Footerator/blob/master/src/assets/ga.png?raw=true" class="gads" alt="" style="float: right; width: 150px;">';
           }
           if (element["Zdjęcie"]) {
             displayIMG =
@@ -159,7 +159,7 @@ export default {
             element["Mail"] +
             '</a></td><td style="padding: 5pt;">' +
             displayGA +
-            '</td></tr></tbody> </table> </td><td class="small" style="padding: 5pt; font-size: 10px; color: rgb(48, 50, 128);">Test Values<br>tel: + 48 0000000<br>NIP: 000000<br><br><a class="lightblue" href="https://test.pl" style="color: rgb(0, 158, 226); text-decoration: none;">Test</a></td></tr><tr> <td colspan="3"> <p style="background-color: #009EE2; padding-top: 3pt; border-radius: 3pt; margin: 0; margin-top: 10pt; margin-bottom: 10pt; font-size: 0;">&nbsp;</p></td></tr><tr> <td colspan="3" style="padding: 5pt;"></td></tr></tbody> </table> </body></html>';
+            '</td></tr></tbody> </table> </td><td class="small" style="padding: 5pt; font-size: 10px; color: rgb(48, 50, 128);">Patrico.io<br>tel: + 48 75650210<br>NIP: 11223344<br><br><a class="lightblue" href="https://test.pl" style="color: rgb(0, 158, 226); text-decoration: none;">Patrico.io</a></td></tr><tr> <td colspan="3"> <p style="background-color: #009EE2; padding-top: 3pt; border-radius: 3pt; margin: 0; margin-top: 10pt; margin-bottom: 10pt; font-size: 0;">&nbsp;</p></td></tr><tr> <td colspan="3" style="padding: 5pt;"></td></tr></tbody> </table> </body></html>';
           singleFooter.content = footerContent;
           singleFooter.title =
             element["Nazwisko"] + "_" + element["Imię"] + ".html";
