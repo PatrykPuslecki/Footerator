@@ -12,7 +12,7 @@
     "file-saver": "^2.0.2",
     "jszip": "^3.2.2",
     "vue": "^2.6.11",
-    "minimist": ">=1.2.3",
+    "minimist": ">=1.2.6",
     "acorn": ">=6.4.1",
     "websocket-extensions": ">=0.1.4"
   },
